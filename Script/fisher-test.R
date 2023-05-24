@@ -6,7 +6,7 @@
 # a	100	200	500	3000
 # b	200	300	600	4000
 # c	300	400	700	5000
-#  ... 
+#        ... 
 
 
 data <- read.table("inputfile",header = T,row.names = 1)
