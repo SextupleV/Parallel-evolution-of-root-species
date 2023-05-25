@@ -12,7 +12,7 @@ func() {
   Required parameter:
  ---------------------
           -i <FILE>  fasta sequence of target species
-          -d <FILE>  Diamond database path
+          -d <FILE>  blastp database path
           -c <FILE>  config.yaml (config file)
           -g <FILE>  groups.yaml (config file)
           -m <FILE>  classification.txt (config file)
@@ -72,6 +72,7 @@ else
   avp prepare -a $output/${input}.avp_blast.out_ai.out -o $output/avp_out -f $input -b $output/${input}.avp_blast.out -x $groups -c $config
 
   echo -e group"\t"donor_number > $output/avp_out/donor_number
+  
   for i in `ls $output/avp_out/fastagroups`; do echo -e $i"\t"`grep ">" $output/avp_out/fastagroups/$i | grep -v -E 'StudiedOrganism|EGP|Ingroup' | wc -l` >>$output/avp_out/donor_number;done
 
   awk '$3>='$donor_n'{print $0}' $output/avp_out/donor_number >$output/avp_out/filiter_donor_number
@@ -79,8 +80,13 @@ else
   awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a)print $0}' $output/avp_out/filiter_donor_number $output/avp_out/groups.tsv >$output/avp_out/filiter_groups.tsv
 
   avp detect -i $output/avp_out/mafftgroups/ -o $output/avp_out/ -g $output/avp_out/filiter_groups.tsv -t $output/avp_out/tmp/taxonomy_nexus.txt -c $config
+  
+  ####################################
+  
+  
 
   avp classify -i $output/avp_out/fasttree_nexus/ -o $output/avp_out/ -t $output/avp_out/fasttree_tree_results.txt -f $classification -c $config
+  
   rm $output/avp_out/filiter_groups.tsv $output/avp_out/filiter_donor_number
 fi
 
