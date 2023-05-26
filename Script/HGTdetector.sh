@@ -80,10 +80,6 @@ else
   awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a)print $0}' $output/avp_out/filiter_donor_number $output/avp_out/groups.tsv >$output/avp_out/filiter_groups.tsv
 
   avp detect -i $output/avp_out/mafftgroups/ -o $output/avp_out/ -g $output/avp_out/filiter_groups.tsv -t $output/avp_out/tmp/taxonomy_nexus.txt -c $config
-  
-  ####################################
-  
-  
 
   avp classify -i $output/avp_out/fasttree_nexus/ -o $output/avp_out/ -t $output/avp_out/fasttree_tree_results.txt -f $classification -c $config
   
