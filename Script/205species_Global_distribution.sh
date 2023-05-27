@@ -79,7 +79,7 @@ Rscript - <<EOF
 
 library(ggplot2) 
 
-data = read.table("./GBIF_data",header = T)
+data <- read.table("./GBIF_data",header = T)
 
 pdf(file="205plant_map.pdf",width=9, height=6)
 
