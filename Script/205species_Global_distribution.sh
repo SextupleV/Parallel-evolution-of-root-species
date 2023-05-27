@@ -13,7 +13,7 @@ library(rgbif)
 
 gbif_taxon_keys <- 
   
-  readr::read_csv("C:/Users/Administrator/Desktop/sp.txt") %>% 
+  readr::read_csv("tableS2") %>% 
   
   pull("Species") %>%
   
