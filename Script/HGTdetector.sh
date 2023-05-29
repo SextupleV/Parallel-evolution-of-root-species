@@ -73,11 +73,11 @@ else
 
   echo -e group"\t"donor_number > $output/avp_out/donor_number
   
-  for i in `ls $output/avp_out/fastagroups`; do echo -e $i"\t"`grep ">" $output/avp_out/fastagroups/$i | grep -v -E 'StudiedOrganism|EGP|Ingroup' | wc -l` >>$output/avp_out/donor_number;done
+  for i in `ls $output/avp_out/fastagroups`; do echo -e $i"\t"`grep ">" $output/avp_out/fastagroups/$i | grep -v -E 'StudiedOrganism|EGP|Ingroup' | wc -l` >> $output/avp_out/donor_number;done
 
-  awk '$3>='$donor_n'{print $0}' $output/avp_out/donor_number >$output/avp_out/filiter_donor_number
+  awk '$3>='$donor_n'{print $0}' $output/avp_out/donor_number > $output/avp_out/filiter_donor_number
 
-  awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a)print $0}' $output/avp_out/filiter_donor_number $output/avp_out/groups.tsv >$output/avp_out/filiter_groups.tsv
+  awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a)print $0}' $output/avp_out/filiter_donor_number $output/avp_out/groups.tsv > $output/avp_out/filiter_groups.tsv
 
   avp detect -i $output/avp_out/mafftgroups/ -o $output/avp_out/ -g $output/avp_out/filiter_groups.tsv -t $output/avp_out/tmp/taxonomy_nexus.txt -c $config
 
