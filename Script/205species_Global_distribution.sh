@@ -39,7 +39,7 @@ occ_download(
   
   user="xxxx", pwd="xxxx", email="xxxx"
   
-) #Please replace with your user information
+) # Please replace with your user information
 
 EOF
 
@@ -50,7 +50,7 @@ wget --no-check-certificate  https://api.gbif.org/v1/occurrence/download/request
 
 unzip 0262483-230224095556074.zip
 
-awk 'BEGIN{FS="\t"}{print $199"\t"$138"\t"$139}' occurrence.txt | awk '$2!=""' >GBIF_data # Extract longitude, latitude, and species taxon.
+awk 'BEGIN{FS="\t"}{print $199"\t"$138"\t"$139}' occurrence.txt | awk '$2!=""' > GBIF_data # Extract longitude, latitude, and species taxon.
 
 sed -i 's/Magnoliopsida/Angiosperma/' GBIF_data
 sed -i 's/Liliopsida/Angiosperma/' GBIF_data
