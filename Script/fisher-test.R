@@ -20,7 +20,7 @@ for (x in 1:row_number) {
   data[x,5] <- out$p.value
 }
 names(data)[5]<-"pvalue"
-data$fdr  <- p.adjust(data$pvalue,method = "BH")  # p.adjust.methods :holm, hochberg, hommel, bonferroni, BH, BY, fdr, none
+data$fdr <- p.adjust(data$pvalue,method = "BH")  # p.adjust.methods :holm, hochberg, hommel, bonferroni, BH, BY, fdr, none
 data$negative_log10fdr <- -log10(data$fdr)
 
 write.table (data,"fisher_result.tab", row.names = T,col.names =T, quote =F,sep="\t")
