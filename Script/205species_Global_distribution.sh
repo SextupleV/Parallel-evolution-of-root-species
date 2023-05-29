@@ -12,6 +12,7 @@ library(magrittr)
 library(rgbif) 
 
 # Reading species information
+
 gbif_taxon_keys <- 
   
   readr::read_csv("tableS2") %>%  #tableS2 can be obtained from Supplementary materials.
