@@ -1,10 +1,8 @@
 #!/usr/bin/Rscript
 
-
 ##################
 
 # Evaluate the difference in three gene modes between woody and herbaceous plants.
-
 
 library(ggplot2)
 
@@ -17,7 +15,6 @@ ggplot(data,aes(x = Habit, y = Number_of-HGT-derived_genes)) +
   geom_jitter(width = 0.2, alpha = 0.6) 
 
 wilcox.test(data$Number_of-HGT-derived_genes[data$Habit=='Herbaceous'],data$Number_of-HGT-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
-
 
 
 # WGD
@@ -36,6 +33,5 @@ ggplot(data,aes(x = Habit, y = Number_of-TD-derived_genes)) +
   geom_jitter(width = 0.2, alpha = 0.6) 
 
 wilcox.test(data$Number_of-TD-derived_genes[data$Habit=='Herbaceous'],data$Number_of-TD-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
-
 
 
