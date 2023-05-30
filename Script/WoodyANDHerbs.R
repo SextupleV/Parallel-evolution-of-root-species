@@ -10,28 +10,28 @@ data = read.table("tableS4",header = T)
 
 # HGT
 
-ggplot(data,aes(x = Habit, y = Number_of-HGT-derived_genes)) +
+ggplot(data,aes(x = Habit, y = Number_of_HGT-derived_genes)) +
   geom_boxplot(fill = c('green','blue'), show.legend = FALSE, width = 0.7) + 
   geom_jitter(width = 0.2, alpha = 0.6) 
 
-wilcox.test(data$Number_of-HGT-derived_genes[data$Habit=='Herbaceous'],data$Number_of-HGT-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
+wilcox.test(data$Number_of_HGT-derived_genes[data$Habit=='Herbaceous'],data$Number_of_HGT-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
 
 
 # WGD
 
-ggplot(data,aes(x = Habit, y = Number_of-WGD-derived_genes)) +
+ggplot(data,aes(x = Habit, y = Number_of_WGD-derived_genes)) +
   geom_boxplot(fill = c('green','blue'), show.legend = FALSE, width = 0.7) + 
   geom_jitter(width = 0.2, alpha = 0.6) 
 
-wilcox.test(data$Number_of-WGD-derived_genes[data$Habit=='Herbaceous'],data$Number_of-WGD-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
+wilcox.test(data$Number_of_WGD-derived_genes[data$Habit=='Herbaceous'],data$Number_of_WGD-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
 
 
 # TD
 
-ggplot(data,aes(x = Habit, y = Number_of-TD-derived_genes)) +
+ggplot(data,aes(x = Habit, y = Number_of_TD-derived_genes)) +
   geom_boxplot(fill = c('green','blue'), show.legend = FALSE, width = 0.7) + 
   geom_jitter(width = 0.2, alpha = 0.6) 
 
-wilcox.test(data$Number_of-TD-derived_genes[data$Habit=='Herbaceous'],data$Number_of-TD-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
+wilcox.test(data$Number_of_TD-derived_genes[data$Habit=='Herbaceous'],data$Number_of_TD-derived_genes[data$Habit=='Woody'],alternative = 'two.side',exact=T)
 
 
