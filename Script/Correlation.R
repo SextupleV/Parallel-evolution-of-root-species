@@ -3,7 +3,7 @@
 
 ##################
 
-# Evaluate the correlation between plant height and three gene derived modes.
+# Calcuate the correlation between plant height and three gene derived modes.
 
 
 data = read.table("tableS5",header = T)
