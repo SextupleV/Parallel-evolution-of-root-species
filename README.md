@@ -1,2 +1,3 @@
-# Parallel-evolution-of-root-species
-The data generated and analyzed during our study
+# A landscape of parallel evolution of tandemly duplicated biotic-response genes in root plant
+Abstract:
+Parallel and/or convergent evolution is an adaptive mechanism when different species facing similar environmental changes. Here, we examined whether high pathogen stress in soil community caused the parallel evolution of global root plants by 205 exemplary Archaeplastida genomes. Our study demonstrated the positive role of tandem duplication (TD) in adaptive evolution of root plants. TD events occurred independently and preferentially expanded biotic stress-related genes in different lineages. Antiparallel or shrinking evolution of TD events caused by specialized lifestyles (aquatic, parasitic, carnivorous etc.) suggested that TD is a dynamic adaptation mechanism driven by biotic stress. Overall, we proposed an evolution model for plant biotic stress adaption, which provides a new insight into the adaptive mechanism of root plants on land.
