@@ -6,7 +6,7 @@
 
 library(ggplot2)
 
-data = read.table("tableS4",header = T)
+data = read.table("tableS4",header = T) # tableS4 can be obtained from Supplementary materials.
 
 # HGT
 
