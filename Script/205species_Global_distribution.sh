@@ -15,7 +15,7 @@ library(rgbif)
 
 gbif_taxon_keys <- 
   
-  readr::read_csv("tableS2") %>%  #tableS2 can be obtained from Supplementary materials.
+  readr::read_csv("tableS2") %>%  # tableS2 can be obtained from Supplementary materials.
   
   pull("Species") %>%
   
