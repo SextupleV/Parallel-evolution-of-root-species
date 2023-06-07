@@ -2,7 +2,7 @@
 
 ###########
 
-awk 'NR>1&&$2>=10{print $1}' tableS5 > list
+awk 'NR>1&&$2>=10{print $1}' tableS6 > list  # tableS6 can be obtained from Supplementary materials.
 
 for i in  `ls root-plant`
 do
