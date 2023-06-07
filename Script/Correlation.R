@@ -6,7 +6,7 @@
 # Calcuate the correlation between plant height and three gene derived modes.
 
 
-data = read.table("tableS5",header = T)
+data = read.table("tableS5",header = T) # tableS5 can be obtained from Supplementary materials.
 
 data$Hight=log2(data$Hight+1)
 
