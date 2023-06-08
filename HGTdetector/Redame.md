@@ -6,6 +6,9 @@ The HGTdetector.sh script was developed to identify Horizontal gene transfer eve
 ![UB4KWWAO)Q{_F5~73S (ALS](https://github.com/SextupleV/TD-research/assets/22436936/9dea2366-49cc-4074-b627-404270d403e3)
 
 ## The usage of HGTdetector.sh script
+
+Note: This script only integrates some programs of AvP software and does not create new ones. If you want to learn more details, you can refer to PMID：36350852.
+
 You can add HGTdetector.sh to your environment and view its usage through the following command：
 
 ```HGTdetector.sh -h```
@@ -19,5 +22,5 @@ We provide an example for test, users just need to prepare the blastp database. 
 
 ```HGTdetector.sh -i Arabidopsis_thaliana.pep.fa -d nr.dmnd -c config.yaml -g groups.yaml -m classification.txt```
 
-This script only integrates some programs of AvP software and does not create new ones. If you want to learn more details, you can refer to PMID：36350852.
+
 
