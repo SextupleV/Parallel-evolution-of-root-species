@@ -6,7 +6,7 @@ The HGTdetector.sh script was developed to identify Horizontal gene transfer eve
 ![UB4KWWAO)Q{_F5~73S (ALS](https://github.com/SextupleV/TD-research/assets/22436936/9dea2366-49cc-4074-b627-404270d403e3)
 
 ## The usage of HGTdetector.sh script
-You can add HGTdetector.sh to your environment and view its usage through the following command.
+You can add HGTdetector.sh to your environment and view its usage through the following command：
 
 ```HGTdetector.sh -h```
 
