@@ -19,7 +19,7 @@ func() {
  ---------------------
   Optional parameter:
  ---------------------
-          -o <DIR>   creates a directory for output files (default: Avp_out)
+          -o <DIR>   create a directory for output files (default: Avp_out)
           -k <INT>   maximum number of target sequences to report alignments for (default: 1000)
           -e <NUM>   blast E-value (default: 1e-10)
           -n <INT>   mix gene number of one group from donors (default: 30)
