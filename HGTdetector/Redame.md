@@ -13,6 +13,6 @@ We provide an example for test, users just need to prepare the blastp database (
 
 You can obtain the test files in the example folder and run the HGTdetector.sh script according to the following command:
 
-HGTdetector.sh -i Arabidopsis_thaliana.pep.fa -d nr.dmnd -c config.yaml -g groups.yaml -m classification.txt
+```HGTdetector.sh -i Arabidopsis_thaliana.pep.fa -d nr.dmnd -c config.yaml -g groups.yaml -m classification.txt```
 
 
