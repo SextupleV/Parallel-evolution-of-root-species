@@ -2,7 +2,7 @@
 
 The HGTdetector.sh script was developed to identify Horizontal gene transfer events.
 
-## The schematic diagram of DupGen_finder pipeline
+## The pipeline used for identification of HGT-derived genes  
 ![UB4KWWAO)Q{_F5~73S (ALS](https://github.com/SextupleV/TD-research/assets/22436936/9dea2366-49cc-4074-b627-404270d403e3)
 
 ## The usage of HGTdetector.sh script
