@@ -91,7 +91,7 @@ pdf(file="205plant_map.pdf",width=9, height=6)
 
 ggplot(data, aes(Longitude, Latitude)) + 
   
-  scale_color_manual(values = c("Rhodophytes"="#CE5270","Chlorophytes"="#1B5E05","Charophytes"="#08F90E","Bryophytes"="#C1E200","Lycophytes"="#0B0BF7","Ferns"="#06F9F9","Gymnosperma"="#751D22","Angiosperma"="red")) +
+  scale_color_manual(values = c("Rhodophytes"="#CE5270","Chlorophytes"="#1B5E05","Charophytes"="#08F90E","Bryophytes"="#C1E200","Lycophytes"="#0B0BF7","Ferns"="#06F9F9","Gymnosperma"="#751D22","Angiosperma"="#FF0000")) +
   
   geom_point(aes(color = class), alpha=0.5, size=0.005) +
   
