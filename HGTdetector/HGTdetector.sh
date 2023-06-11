@@ -75,7 +75,7 @@ else
   
   for i in `ls $output/avp_out/fastagroups`; do echo -e $i"\t"`grep ">" $output/avp_out/fastagroups/$i | grep -v -E 'StudiedOrganism|EGP|Ingroup' | wc -l` >> $output/avp_out/donor_number;done
 
-  awk '$3>='$donor_n'{print $0}' $output/avp_out/donor_number > $output/avp_out/filiter_donor_number
+  awk '$2>='$donor_n'{print $0}' $output/avp_out/donor_number > $output/avp_out/filiter_donor_number
 
   awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a)print $0}' $output/avp_out/filiter_donor_number $output/avp_out/groups.tsv > $output/avp_out/filiter_groups.tsv
 
