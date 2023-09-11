@@ -1,5 +1,0 @@
-#rank members
-NM_Eukaryota	Metazoa;Fungi;Oomycota
-Prokaryota	Bacteria;Archaea
-Viriods	Viroids
-Viruses	Viruses
