@@ -16,11 +16,11 @@ for (x in 1:row_number) {
   test <- data [x,1:4]
   test <- as.numeric(test)
   test <- matrix(test,nrow=2)
-  out <- fisher.test(test,alternative = "greater")  # the alternative must be one of "two.sided", "greater" or "less".
+  out <- fisher.test(test,alternative = "greater")
   data[x,5] <- out$p.value
 }
 names(data)[5]<-"pvalue"
-data$fdr <- p.adjust(data$pvalue,method = "BH")  # p.adjust.methods :holm, hochberg, hommel, bonferroni, BH, BY, fdr, none
+data$fdr <- p.adjust(data$pvalue,method = "BH")
 data$negative_log10fdr <- -log10(data$fdr)
 
 write.table (data,"fisher_result.tab", row.names = T,col.names =T, quote =F,sep="\t")
