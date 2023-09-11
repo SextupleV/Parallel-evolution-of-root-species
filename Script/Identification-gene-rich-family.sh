@@ -4,7 +4,7 @@
 
 awk 'NR>1&&$2>=10{print $1}' family_gene_num > list  # family_gene_num file can be obtained from the 'inputfile_for_script' folder
 
-for i in  `ls root-plant`
+for i in  `ls root-plant` # root-plant folder in the 205species folder
 do
     cat root-plant/$i/${i}_gene_family | awk 'NR>1{print $2"\t"$1}' >> all-family
 done
