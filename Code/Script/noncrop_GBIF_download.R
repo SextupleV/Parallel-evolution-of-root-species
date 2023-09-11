@@ -13,7 +13,7 @@ library(rgbif)
 
 gbif_taxon_keys <- 
   
-  readr::read_csv("noncrop_list.txt") %>%  # noncrop_list.txt can be obtained from Supplementary materials.
+  readr::read_csv("noncrop_list.txt") %>%  # noncrop_list.txt can be obtained from 'inputfile_for_script' floder or supplementary materials.
   
   pull("Species") %>%
   
