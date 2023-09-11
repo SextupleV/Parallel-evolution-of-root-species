@@ -1,3 +1,5 @@
+# The GO term enrichments of genes in WGD-derived families. The significance level is shown as negative log10(FDR). When the significance level is greater than 300, it is set as 300. The TD- and WGD-derived families are distinguished by blue and red backgrounds.
+
 GO_ID	GO_name	Selaginella_moellendorffii	Adiantum_capillusveneris	Ceratopteris_richardii	Cycas_panzhihuaensis	Torreya_grandis	Taxus_wallichiana	Amborella_trichopoda	Annona_cherimola	Dioscorea_zingiberensis	Elaeis_guineensis	Oryza_sativa	Setaria_italica	Sorghum_bicolor	Zea_mays	Nelumbo_nucifera	Vitis_vinifera	Arabidopsis_thaliana	Theobroma_cacao	Populus_trichocarpa	Glycine_max	Prunus_mume	Malus_domestica	Rhododendron_simsii	Helianthus_annuus	Daucus_carota	Coffea_arabica	Solanum_lycopersicum	Beta_vulgaris
 GO:0016705	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 GO:0005506	iron ion binding	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
