@@ -1,5 +1,7 @@
 #!/usr/bin/Rscript
 
+library(raster)
+
 setwd("/working/gridded_variables/")
 
 var_list <- c(list.files(pattern = "\\.tif$", full.names = TRUE))
