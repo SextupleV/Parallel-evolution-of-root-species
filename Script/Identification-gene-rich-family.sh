@@ -2,7 +2,7 @@
 
 ###########
 
-awk 'NR>1&&$2>=10{print $1}' tableS6 > list  # tableS6 can be obtained from Supplementary materials.
+awk 'NR>1&&$2>=10{print $1}' family_inputfile > list  
 
 for i in  `ls root-plant`
 do
