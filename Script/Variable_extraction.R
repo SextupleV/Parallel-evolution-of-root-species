@@ -1,5 +1,6 @@
 #!/usr/bin/Rscript
 
+###########
 library(raster)
 
 setwd("/working/gridded_variables/")
