@@ -20,7 +20,7 @@ The details of the species geographical coordinates, climatic, environmental, an
 The GO term annotations for 28 representative species and enriched terms of TD- and WGD-derived family genes.
 
 # 6. MLtree
-The original phylogenetic trees files for the ten TD-derived families.
+The original phylogenetic tree files for the ten TD-derived families.
 
 # 7. Mangroves
 The details of 15 mangrove genomes.
