@@ -14,7 +14,7 @@ Ancestral and independent TD events in *Arabidopsis thaliana*, *Schrenkiella par
 List of upregulated genes in *Arabidopsis thaliana* and *Oryza sativa* and under biotic stresses, including eight biotic-treated stresses (*Botrytis cinereal*, *Colletotrichum tofieldiae*, flg22, *Heterodera schachti* nematodes, *Heterodera schachtii* parasitism, *Pseudomonas syringae*, *Rhizobium* sp, and *Verticillium dahlia*) in *Arabidopsis thaliana* and eight biotic-treated stresses (*Meloidogyne incognita*, *Magnaporthe oryzae*, *Azospirillum brasilense*, Soil microbiome, *Hirschmanniella oryzae*, *Rhizophagus irregularis*, *Burkholderia vietnamiensis* and *Paraburkholderia kururiensis*) in *Oryza sativa*. 
 
 **4. GLM_analysis**  
-The details of the species geographical coordinates, climatic, environmental, and plant morpho-ecospace variables, and the GLM analysis results of 1000 bootstrap resampling replicates.
+The details of the species geographical coordinates, climatic, anthropogenic, edaphic, and plant morpho-ecospace variables, and the GLM analysis results of 1000 bootstrap resampling replicates.
 
 **5. GO_enrichment**  
 The GO term annotations for 28 representative species and enriched terms of TD- and WGD-derived family genes.
