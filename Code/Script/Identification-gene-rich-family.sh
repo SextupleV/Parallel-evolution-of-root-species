@@ -38,3 +38,6 @@ awk 'NR==FNR{a[$1]=$0}NR>FNR{if($1 in a);else print $1}' less more >> filitered-
 awk '{a[$1]++;if(a[$1]==1){print $0}}' filitered-list > gene-rich-family
 
 rm -r less more filitered-list tmp more_less
+
+##############
+
