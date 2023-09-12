@@ -7,7 +7,7 @@ Convergent and/or parallel evolution is the repeated occurrence of similar adapt
 **1. 205species**  
 The details of 205 studied genomes, including 45 non-root plants and 160 root plants. You can obtain the gene lists of TD-, WGD- and HGT-derived genes, the gene family of each gene, and the *Ks* values of TD-gene pairs for each species from this folder.
 
-**2. Ancestral_and_specific_TD_events:**  
+**2. Ancestral_and_specific_TD_events**  
 Ancestral and independent TD events in *Arabidopsis thaliana*, *Schrenkiella parvula*, *Oryza sativa* and *Zizania latifolia*. The TD events that occurred before and after the divergence of *A. thaliana* and *S. parvula*, as well as *O. sativa* and *Z. latifolia*, were considered ancestral and specific TD events, respectively.
 
 **3. Biotic_stress_up_genes**  
