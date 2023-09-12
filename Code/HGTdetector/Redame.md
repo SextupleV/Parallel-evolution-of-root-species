@@ -7,7 +7,7 @@ The 'HGTdetector.sh' script was developed to identify horizontal gene transfer e
 
 ## The usage of 'HGTdetector.sh' script
 
-Note: This script only integrates some programs of AvP software and does not create new ones. If you want to learn more details about AvP software, you can refer to PMID：36350852.
+Note: This script only integrates some programs of AvP software and does not create new ones. If you want to learn more details about AvP software, you can refer to PMID:36350852.
 
 You can add 'HGTdetector.sh' to your environment and view its usage through the following command：
 
