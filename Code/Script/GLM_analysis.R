@@ -1,6 +1,7 @@
 #!/usr/bin/Rscript
 
 #########
+
 data = read.table("GLM_analysis.txt",header=T) # 'GLM_analysis.txt' file can be obtained from the 'inputfile_for_script' folder
 
 variables = colnames(data[,-3:-1])
@@ -23,6 +24,8 @@ for (i in 1:length(variables)){
 
 write.table(results,"GLM_results.txt", row.names = F, 
             col.names =T, quote =T,sep="\t")
+
+
 ########################
 
 
