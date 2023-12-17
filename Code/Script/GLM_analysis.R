@@ -18,8 +18,7 @@ for (i in 1:length(variables)){
   results$variable[i] = var
   results$pv_lin[i] = summary(model)$coefficients[nrow(summary(model)$coefficients),4]
   results$beta_lin[i] = summary(model)$coefficients[nrow(summary(model)$coefficients),1]
-  results$var_lin[i] = 100*(model$null.deviance-model$deviance)/model$null.deviance # pseudo R^2
-  
+  results$var_lin[i] = 100*(model$null.deviance-model$deviance)/model$null.deviance
 }
 
 write.table(results,"GLM_results.txt", row.names = F, 
