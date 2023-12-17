@@ -1,8 +1,10 @@
 #!/usr/bin/Rscript
 
 #########
+# This script references the research of Rice et al (Rice et al., 2019).
 
-data = read.table("./GLM_analysis",header=T)
+
+data = read.table("E:/study/R/TD/GLM_analysis",header=T)
 
 variables = c("absolute_latitude","elevation","bio1","bio2","bio3","bio4","bio5","bio6","bio7","bio8","bio9","bio10","bio11","bio12","bio13","bio14","bio15","bio16",
                "bio17","bio18","bio19","peo_bio1","peo_bio2","peo_bio3","peo_bio4","peo_bio5","peo_bio6","peo_bio7","peo_bio8","peo_bio9","peo_bio10",
@@ -19,8 +21,8 @@ for (i in 1:length(variables)){
   curr_att = variables[i]
   ind = which(names(data)==curr_att)
   sub_data = data[which(!is.na(data[,ind])),]
-  perc_pp = cbind(sub_data$TD,sub_data$non_TD)
-  m1 = try(glm(as.formula(paste("perc_pp~",curr_att,sep="")),family=binomial, data = sub_data))
+  perc_td = cbind(sub_data$TD,sub_data$non_TD)
+  m1 = try(glm(as.formula(paste("perc_td~",curr_att,sep="")),family=binomial, data = sub_data))
   
   
   results$variable[i] = curr_att
@@ -30,11 +32,9 @@ for (i in 1:length(variables)){
 
 }
 
-
-
 data$leaf_phenology=as.factor(data$leaf_phenology)
-perc_pp = cbind(data$TD,data$non_TD)
-m1 = glm(perc_pp~leaf_phenology,family=binomial, data = data)
+perc_td = cbind(data$TD,data$non_TD)
+m1 = glm(perc_td~leaf_phenology,family=binomial, data = data)
 
 
 results$variable[length(variables)+1] = "leaf_phenology"
@@ -44,7 +44,7 @@ results$var_lin[length(variables)+1] = 100*(m1$null.deviance-m1$deviance)/m1$nul
 
 
 data$growth_habit=as.factor(data$growth_habit)
-m1 = glm(perc_pp~growth_habit,family=binomial, data = data)
+m1 = glm(perc_td~growth_habit,family=binomial, data = data)
 
 results$variable[length(variables)+2] = "growth_habit"
 results$pv_lin[length(variables)+2] = summary(m1)$coefficients[nrow(summary(m1)$coefficients),4]
@@ -53,7 +53,7 @@ results$var_lin[length(variables)+2] = 100*(m1$null.deviance-m1$deviance)/m1$nul
 
 results$adj_Pvalue = p.adjust(results$pv_lin,method="BH")
 
-write.table(results,"./GLM_results.txt", row.names = F, 
+write.table(results,"E:/study/R/TD/GLM_results.txt", row.names = F, 
             col.names =T, quote =T,sep="\t")
 
 ########################
