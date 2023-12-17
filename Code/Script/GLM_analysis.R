@@ -24,3 +24,5 @@ for (i in 1:length(variables)){
 write.table(results,"GLM_results.txt", row.names = F, 
             col.names =T, quote =T,sep="\t")
 ########################
+
+
