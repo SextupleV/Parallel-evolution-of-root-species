@@ -21,8 +21,7 @@ for (i in 1:length(variables)){
   results$var_lin[i] = 100*(model$null.deviance-model$deviance)/model$null.deviance
 }
 
-write.table(results,"GLM_results.txt", row.names = F, 
-            col.names =T, quote =T,sep="\t")
+write.table(results,"GLM_results.txt",row.names = F,col.names =T,quote =T,sep="\t")
 
 
 ########################
